@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/semantic.css"
+		/>
+		<title>navigation</title>
+	</head>
+	<body>
+		<!--Start: Nav  -->
+		<div class="ui fixed borderless huge menu">
+			<div class="ui container grid">
+				<!--Start: Desktop Nav-->
+				<div class="computer only row">
+					<a href="#" class="header item">
+						<figure class="item_image">
+							<img
+								class="ui mini image"
+								src="assests/AidNetlogo.svg"
+								data-aos="fade-down"
+								data-aos-duration="1300"
+							/>
+							<figcaption class="caption">
+								<span class="aid"> Aid</span> <span class="net">net</span>
+							</figcaption>
+						</figure></a
+					>
+					<a href="#" class="active item">Home</a>
+					<a href="#" class="item">Contact</a>
+					<a href="#" class="item">About</a>
+					<a href="#" class="ui dropdown item"
+						>Aid<i class="dropdown icon"></i
+					></a>
+					<!-- Start: Popup -->
+					<div
+						class="ui fluid popup bottom left transition hidden"
+						style="
+							top: 553px;
+							left: 1px;
+							bottom: auto;
+							right: auto;
+							width: 657px;
+						"
+					>
+						<div class="ui four column relaxed divided grid">
+							<div class="ui link list">
+								<h4 class="ui header">Fundraise</h4>
+							</div>
+							<div class="ui link list">
+								<h4 class="ui header">Donate</h4>
+							</div>
+						</div>
+					</div>
+					<!-- End: Popup -->
+
+					<div class="right menu">
+						<a
+							href="#"
+							class="ui item"
+							href="#"
+							style="color: white"
+							data-aos="fade-up"
+							data-aos-duration="1100"
+						>
+							Login
+						</a>
+						<div class="item">
+							<a
+								href="#"
+								class="ui button_get"
+								data-aos="fade-up"
+								data-aos-duration="1400"
+								>Get started</a
+							>
+						</div>
+					</div>
+				</div>
+				<!--End: Desktop Nav-->
+
+				<!--Start: Mobile Nav-->
+				<div class="tablet mobile only row">
+					<a href="#" class="header item">
+						<figure class="item_image">
+							<img
+								class="ui mini image"
+								src="assests/AidNetlogo.svg"
+								data-aos="fade-down"
+								data-aos-duration="1300"
+							/>
+							<figcaption class="caption">
+								<span class="aid"> Aid</span> <span class="net">net</span>
+							</figcaption>
+						</figure></a
+					>
+					<div class="right menu">
+						<a class="menu item">
+							<div class="ui basic icon toggle button">
+								<i class="content icon"></i>
+							</div>
+						</a>
+					</div>
+					<div class="ui vertical accordion borderless fluid menu">
+						<a href="#" class="active item"> Home</a>
+						<a href="#" class="item"> Contact</a>
+						<a href="#" class="item"> About</a>
+						<div class="item">
+							<div class="title">Aid<i class="dropdown icon"></i></div>
+							<div class="content">
+								<a href="#" class="item">Fundraise</a>
+								<a href="#" class="item">Donate</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--End: Mobile Nav-->
+			</div>
+		</div>
+		<!--End: Nav  -->
+		<style>
+			body {
+				min-height: 2000px;
+			}
+			body > .ui.container {
+				margin-top: 6em;
+			}
+			.button_get {
+				font-weight: bold;
+				color: #0028ff;
+				background-color: #fff;
+				border: none;
+				border-radius: 3px;
+				padding: 15px 25px;
+			}
+			.offices {
+				color: #fff;
+			}
+			.flags a {
+				padding: 0.012em;
+			}
+			/* Nav */
+			.ui.fixed.borderless.menu {
+				background-color: #0d2187;
+			}
+
+			.ui .computer.only .item {
+				color: #fff;
+			}
+
+			.ui .computer.only .item:hover {
+				background: #0028ff;
+				color: #fff;
+				border-bottom: 1px solid #fff;
+			}
+
+			.ui .computer .item.active {
+				background: #304fff;
+				color: #fff;
+				border-bottom: 1px solid #fff;
+			}
+
+			.ui.dropdown.item .menu {
+				background-color: #0d2187;
+			}
+			.ui.menu .ui.dropdown .menu > .item {
+				color: #fff;
+			}
+			.ui.menu .ui.dropdown .menu > .item.active {
+				background-color: #304fff;
+				color: #fff;
+				border-bottom: 1px solid #fff;
+			}
+			.ui.menu .ui.dropdown .menu > .item:hover {
+				background-color: #0028ff;
+				color: #fff;
+				border-bottom: 1px solid #fff;
+			}
+
+			.ui.fixed.borderless.menu .row > a.header.item {
+				font-size: 1.2em;
+			}
+
+			/* Mobile */
+			.tablet.mobile.only .header,
+			.ui.icon.button > .icon {
+				color: #fff;
+			}
+
+			.tablet.mobile.only .header:hover {
+				background-color: #0028ff;
+				color: #fff;
+				border-bottom: 1px solid #fff;
+			}
+
+			.ui.basic.button:hover {
+				background: #0028ff;
+				color: #fff;
+				border-bottom: 1px solid #fff;
+			}
+
+			.ui.vertical.menu {
+				display: none;
+				border: none;
+				box-shadow: none;
+				background-color: #0d2187;
+			}
+			.ui.vertical.menu > .item {
+				padding-left: 1.428em;
+				color: #fff;
+			}
+
+			.ui.vertical.menu > .item.active {
+				padding-left: 1.428em;
+				background-color: #304fff;
+				color: #fff;
+				border-bottom: 1px solid #fff;
+			}
+
+			.ui.vertical.menu > .item:hover {
+				padding-left: 1.428em;
+				background-color: #0028ff;
+				color: #fff;
+				border-bottom: 1px solid #fff;
+			}
+			.ui.vertical.menu .item .title {
+				color: #fff;
+			}
+			.ui.vertical.menu .item .title .dropdown.icon {
+				float: none;
+				color: #fff;
+			}
+
+			.ui.vertical.menu .item .content .item {
+				padding: 0.5em 1em;
+				color: #fff;
+			}
+
+			.ui.vertical.menu .item .content .item:hover {
+				padding: 0.5em 1em;
+				background-color: #0028ff;
+				color: #fff;
+				border-bottom: 1px solid #fff;
+			}
+
+			.ui.vertical.menu .item .content .item.active {
+				padding: 0.5em 1em;
+				background-color: #304fff;
+				color: #fff;
+				border-bottom: 1px solid #fff;
+			}
+
+			.ui.vertical.menu .header.item {
+				text-transform: uppercase;
+				color: #fff;
+			}
+			/* Nav */
+
+			.ui.message {
+				background-color: rga(238, 238, 238);
+				box-shadow: none;
+				padding: 5em 4em;
+			}
+			.ui.message h1.ui.header {
+				font-size: 4.5em;
+				color: #0d2187;
+			}
+			.ui.message p.lead {
+				font-size: 1.3em;
+				color: #333333;
+				line-height: 1.4;
+				font-weight: 300;
+			}
+
+			.ui.purple.button {
+				background-color: #0d2187;
+			}
+		</style>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/semantic.js"></script>
+		<script>
+			$(document).ready(function () {
+				$(".computer.only .dropdown.item").popup({
+					inline: true,
+					hoverable: true,
+					position: "bottom left",
+					delay: {
+						show: 300,
+						hide: 800,
+					},
+				});
+				$(".ui.dropdown").dropdown();
+				$(".ui.accordion").accordion();
+
+				// bind "hide and show vertical menu" event to top right icon button
+				$(".ui.toggle.button").click(function () {
+					$(".ui.vertical.menu").toggle("250", "linear");
+				});
+			});
+		</script>
+	</body>
+</html>

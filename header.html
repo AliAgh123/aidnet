@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+		/>
+		<!-- for disabling viewport zooming -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+		/>
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+		<title>header</title>
+	</head>
+
+	<body>
+		<header data-aos="fade-down" data-aos-duration="700">
+			<nav
+				class="nav_bar navigation"
+				style="
+					background-color: #0d2187;
+					border-radius: 5px;
+					border-top-left-radius: 0px;
+					border-top-right-radius: 0px;
+				"
+			>
+				<div class="ui secondary menu">
+					<div class="item">
+						<a href="#">
+							<figure class="item_image">
+								<img
+									class="ui mini image"
+									src="assests/AidNetlogo.svg"
+									data-aos="fade-down"
+									data-aos-duration="1300"
+								/>
+								<figcaption class="caption">
+									<span class="aid"> Aid</span> <span class="net">net</span>
+								</figcaption>
+							</figure>
+						</a>
+					</div>
+					<a
+						href="#"
+						class="item"
+						style="color: white"
+						data-aos="fade-down"
+						data-aos-duration="1400"
+					>
+						Home
+					</a>
+					<a
+						href="#"
+						class="item"
+						style="color: white"
+						data-aos="fade-down"
+						data-aos-duration="1300"
+					>
+						Contact
+					</a>
+					<a
+						href="#"
+						class="item"
+						style="color: white"
+						data-aos="fade-down"
+						data-aos-duration="1200"
+					>
+						About
+					</a>
+					<div class="ui menu item" style="width: 75px">
+						<div class="ui simple dropdown item">
+							<div style="margin-bottom: 0">
+								<a
+									href="#"
+									style="color: white"
+									data-aos="fade-down"
+									data-aos-duration="1200"
+								>
+									Aid
+								</a>
+								<i class="dropdown icon" style="color: white; width: auto"></i>
+							</div>
+							<div
+								class="menu"
+								style="background-color: #0d2187; margin-top: 0"
+							>
+								<div class="item">
+									<a href="#" style="color: white">Fundraise</a>
+								</div>
+								<div class="item">
+									<a href="#" style="color: white">Donate</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="right menu">
+						<a
+							href="#"
+							class="ui item"
+							href="#"
+							style="color: white"
+							data-aos="fade-up"
+							data-aos-duration="1100"
+						>
+							Login
+						</a>
+						<div class="item">
+							<a
+								href="#"
+								class="ui button_get"
+								data-aos="fade-up"
+								data-aos-duration="1400"
+								>Get started</a
+							>
+						</div>
+					</div>
+				</div>
+			</nav>
+			<nav class="nav_bar2 navigation" style="background-color: #0d2187">
+				<div class="ui secondary menu">
+					<div class="item">
+						<figure class="item_image">
+							<img
+								class="ui mini image"
+								src="assests/AidNetlogo.svg"
+								data-aos="fade-down"
+								data-aos-duration="1300"
+							/>
+							<figcaption class="caption">
+								<span class="aid"> Aid</span> <span class="net">net</span>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="item">
+						<a href="#" class="item menu_icon">
+							<button id="button" class="button_bar">
+								<i class="bars icon"></i> Menu
+							</button></a
+						>
+						<div
+							class="ui inverted left fixed vertical menu vertical_menu"
+							id="content"
+							style="margin-top: 66px; transform: translateX(-250px)"
+						>
+							<ul style="list-style-type: none">
+								<div class="ui list">
+									<li><a href="#" class="item side_list"> Home </a></li>
+									<li><a href="#" class="item side_list"> About </a></li>
+									<li><a href="#" class="item side_list"> Contact </a></li>
+									<li>
+										<div class="ui menu item">
+											<div class="ui simple dropdown item">
+												<div
+													style="
+														color: white;
+														margin-left: 10px;
+														display: flex;
+														justify-content: flex-start;
+													"
+												>
+													<a href="#" style="color: white"> Aid </a>
+													<i class="dropdown icon"></i>
+												</div>
+												<div class="menu" style="background-color: #1b1c1d">
+													<div class="item">
+														<a href="#" style="color: white">Fundraise</a>
+													</div>
+													<div class="item">
+														<a href="#" style="color: white">Donate</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<a href="#" class="ui item" href="#" style="color: white">
+											Login
+										</a>
+									</li>
+									<li>
+										<div class="item">
+											<a href="#" class="ui button_get">Get started</a>
+										</div>
+									</li>
+								</div>
+							</ul>
+						</div>
+					</div>
+					<div class="right menu">
+						<a href="#" class="ui item" href="#" style="color: white">
+							Login
+						</a>
+						<div class="item">
+							<a href="#" class="ui button_get">Get started</a>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			.button_get {
+				font-weight: bold;
+				color: #0028ff;
+				background-color: #fff;
+				border: none;
+				border-radius: 3px;
+				padding: 15px 25px;
+			}
+
+			.navigation {
+				margin: 0% 4.68% 0% 7.29%;
+			}
+
+			.nav_bar2 {
+				visibility: hidden;
+				position: absolute;
+			}
+
+			.button_bar {
+				display: flex;
+				flex-direction: row;
+				font-weight: bold;
+				color: #0028ff;
+				background-color: #fff;
+				border: none;
+				border-radius: 3px;
+				padding: 15px 25px;
+			}
+
+			.vertical_menu {
+				width: 500px;
+			}
+			figure.item1 {
+				vertical-align: top;
+				display: inline-block;
+				text-align: center;
+				width: 120px;
+			}
+			.caption {
+				display: block;
+				position: relative;
+				left: -7px;
+			}
+			.aid {
+				color: #0028ff;
+			}
+			.net {
+				color: white;
+			}
+			/* Tablet version */
+
+			@media only screen and (min-width: 601px) and (max-width: 960px) {
+				header {
+					width: 960px;
+				}
+			}
+			@media only screen and (max-width: 600px) {
+				.nav_bar {
+					visibility: hidden;
+					position: absolute;
+				}
+				.nav_bar2 {
+					visibility: visible;
+					position: static;
+				}
+				header {
+					width: 700px;
+				}
+				#button {
+					position: absolute;
+				}
+				.side_list {
+					display: flex;
+					justify-content: center;
+				}
+			}
+
+			@keyframes content {
+				0% {
+					transform: translateX(-200px);
+				}
+				100% {
+					transform: translateX(0px);
+				}
+			}
+
+			@keyframes menuitemz {
+				0% {
+					transform: translateX(0px);
+				}
+				100% {
+					transform: translateX(-300px);
+				}
+			}
+		</style>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
+		<script>
+			var button = document.getElementById("button");
+
+			button.onclick = function () {
+				var div = document.getElementById("content");
+				if (div.style.display !== "none") {
+					content.style.animationName = "content";
+					content.style.animationDuration = ".5s";
+					content.style.animationIterationCount = "1";
+					content.style.webkitAnimationTimingFunction = "ease";
+					content.style.webkitAnimationFillMode = "forwards";
+					div.style.display = "none";
+				} else {
+					console.log("test");
+					content.style.animationName = "content";
+					content.style.animationDuration = ".5s";
+					content.style.animationIterationCount = "1";
+					content.style.webkitAnimationTimingFunction = "ease";
+					content.style.webkitAnimationFillMode = "forwards";
+					div.style.display = "block";
+				}
+			};
+		</script>
+	</body>
+</html>
