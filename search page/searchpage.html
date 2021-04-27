@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- for disabling viewport zooming -->
+		<meta
+			name="viewport"
+			content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0"
+		/>
+		<!-- CSS links -->
+		<!-- semantic ui's css link-->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+		/>
+		<!-- animations' links start -->
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<!-- animations' links end -->
+		<!-- fonts' links start -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- fonts' links end -->
+		<!-- add icon link -->
+		<link
+			rel="icon"
+			href="assests/photos/AidNetlogo.svg"
+			sizes="any"
+			type="image/svg+xml"
+		/>
+		<link rel="stylesheet" href="searchpage.css" />
+		<!-- End: CSS links -->
+		<title>Search page</title>
+	</head>
+	<body>
+		<div class="ui search">
+			<div class="big_search_container">
+				<div class="search_container">
+					<h1
+						class="ui huge center aligned header"
+						style="color: #fff; font-size: 4em"
+					>
+						AidNet help
+					</h1>
+					<div class="ui icon input" style="width: 35%; height: 13%">
+						<input
+							class="prompt"
+							type="text"
+							placeholder="I need help with..."
+						/>
+						<i class="search link icon"></i>
+					</div>
+					<h1 class="ui header">
+						<div class="sub header" style="color: #fff; font-size: 0.8em">
+							for NGOs, fundraisers, and donors
+						</div>
+					</h1>
+				</div>
+			</div>
+			<div class="ui link four stackable cards resultant_cards">
+				<div class="card">
+					<div class="image">
+						<img src="assests/photos/poor_image.png" />
+					</div>
+					<div class="content">
+						<div class="header"><%= heading %></div>
+						<div class="left floated author">
+							<img
+								class="ui avatar image"
+								src="assests/photos/poor_image.png"
+								alt="user"
+							/>
+							<span>
+								<a href="#"><%= poor %> </a>
+							</span>
+						</div>
+						<div class="description"><%= description %></div>
+						<div class="percentage"><%= percentage %> &percnt;</div>
+						<p
+							style="
+								float: right;
+								padding-right: 30%;
+								padding-top: 4.5%;
+								line-height: 1.5em;
+							"
+						>
+							<span style="color: blueviolet; font-size: 1.2em"
+								><!--<%# donations %>-->13000 &dollar;</span
+							><span style="font-weight: lighter"> raised by </span><br />
+							<span style="font-weight: bold"
+								><!--<%# supporter %>-->513 supporters</span
+							>
+						</p>
+					</div>
+					<div class="extra content">
+						<span class="right floated"> Joined in <%= joining_date %> </span>
+					</div>
+				</div>
+				<div class="card">
+					<div class="image">
+						<img src="assests/photos/poor_image.png" />
+					</div>
+					<div class="content">
+						<div class="header"><%= heading %></div>
+						<div class="left floated author">
+							<img
+								class="ui avatar image"
+								src="assests/photos/poor_image.png"
+								alt="user"
+							/>
+							<span>
+								<a href="#"><%= poor %> </a>
+							</span>
+						</div>
+						<div class="description"><%= description %></div>
+						<div class="percentage"><%= percentage %> &percnt;</div>
+						<p
+							style="
+								float: right;
+								padding-right: 30%;
+								padding-top: 4.5%;
+								line-height: 1.5em;
+							"
+						>
+							<span style="color: blueviolet; font-size: 1.2em"
+								><!--<%# donations %>-->13000 &dollar;</span
+							><span style="font-weight: lighter"> raised by </span><br />
+							<span style="font-weight: bold"
+								><!--<%# supporter %>-->513 supporters</span
+							>
+						</p>
+					</div>
+					<div class="extra content">
+						<span class="right floated"> Joined in <%= joining_date %> </span>
+					</div>
+				</div>
+				<div class="card">
+					<div class="image">
+						<img src="assests/photos/poor_image.png" />
+					</div>
+					<div class="content">
+						<div class="header"><%= heading %></div>
+						<div class="left floated author">
+							<img
+								class="ui avatar image"
+								src="assests/photos/poor_image.png"
+								alt="user"
+							/>
+							<span>
+								<a href="#"><%= poor %> </a>
+							</span>
+						</div>
+						<div class="description"><%= description %></div>
+						<div class="percentage"><%= percentage %> &percnt;</div>
+						<p
+							style="
+								float: right;
+								padding-right: 30%;
+								padding-top: 4.5%;
+								line-height: 1.5em;
+							"
+						>
+							<span style="color: blueviolet; font-size: 1.2em"
+								><!--<%# donations %>-->13000 &dollar;</span
+							><span style="font-weight: lighter"> raised by </span><br />
+							<span style="font-weight: bold"
+								><!--<%# supporter %>-->513 supporters</span
+							>
+						</p>
+					</div>
+					<div class="extra content">
+						<span class="right floated"> Joined in <%= joining_date %> </span>
+					</div>
+				</div>
+				<div class="card">
+					<div class="image">
+						<img src="assests/photos/poor_image.png" />
+					</div>
+					<div class="content">
+						<div class="header"><%= heading %></div>
+						<div class="left floated author">
+							<img
+								class="ui avatar image"
+								src="assests/photos/poor_image.png"
+								alt="user"
+							/>
+							<span>
+								<a href="#"><%= poor %> </a>
+							</span>
+						</div>
+						<div class="description"><%= description %></div>
+						<div class="percentage"><%= percentage %> &percnt;</div>
+						<p
+							style="
+								float: right;
+								padding-right: 30%;
+								padding-top: 4.5%;
+								line-height: 1.5em;
+							"
+						>
+							<span style="color: blueviolet; font-size: 1.2em"
+								><!--<%# donations %>-->13000 &dollar;</span
+							><span style="font-weight: lighter"> raised by </span><br />
+							<span style="font-weight: bold"
+								><!--<%# supporter %>-->513 supporters</span
+							>
+						</p>
+					</div>
+					<div class="extra content">
+						<span class="right floated"> Joined in <%= joining_date %> </span>
+					</div>
+				</div>
+				<div class="card">
+					<div class="image">
+						<img src="assests/photos/poor_image.png" />
+					</div>
+					<div class="content">
+						<div class="header"><%= heading %></div>
+						<div class="left floated author">
+							<img
+								class="ui avatar image"
+								src="assests/photos/poor_image.png"
+								alt="user"
+							/>
+							<span>
+								<a href="#"><%= poor %> </a>
+							</span>
+						</div>
+						<div class="description"><%= description %></div>
+						<div class="percentage"><%= percentage %> &percnt;</div>
+						<p
+							style="
+								float: right;
+								padding-right: 30%;
+								padding-top: 4.5%;
+								line-height: 1.5em;
+							"
+						>
+							<span style="color: blueviolet; font-size: 1.2em"
+								><!--<%# donations %>-->13000 &dollar;</span
+							><span style="font-weight: lighter"> raised by </span><br />
+							<span style="font-weight: bold"
+								><!--<%# supporter %>-->513 supporters</span
+							>
+						</p>
+					</div>
+					<div class="extra content">
+						<span class="right floated"> Joined in <%= joining_date %> </span>
+					</div>
+				</div>
+				<div class="card">
+					<div class="image">
+						<img src="assests/photos/poor_image.png" />
+					</div>
+					<div class="content">
+						<div class="header"><%= heading %></div>
+						<div class="left floated author">
+							<img
+								class="ui avatar image"
+								src="assests/photos/poor_image.png"
+								alt="user"
+							/>
+							<span>
+								<a href="#"><%= poor %> </a>
+							</span>
+						</div>
+						<div class="description"><%= description %></div>
+						<div class="percentage"><%= percentage %> &percnt;</div>
+						<p
+							style="
+								float: right;
+								padding-right: 30%;
+								padding-top: 4.5%;
+								line-height: 1.5em;
+							"
+						>
+							<span style="color: blueviolet; font-size: 1.2em"
+								><!--<%# donations %>-->13000 &dollar;</span
+							><span style="font-weight: lighter"> raised by </span><br />
+							<span style="font-weight: bold"
+								><!--<%# supporter %>-->513 supporters</span
+							>
+						</p>
+					</div>
+					<div class="extra content">
+						<span class="right floated"> Joined in <%= joining_date %> </span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

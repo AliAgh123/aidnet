@@ -1,0 +1,46 @@
+.big_search_container {
+	background-color: #0d2187;
+	padding-top: 100px;
+}
+
+.search_container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #0d2187;
+	background-image: url(assests/photos/px-bg.svg),
+		url("assests/photos/fundraise_search.jpg");
+	height: 500px;
+	background-position: center center, center center;
+	background-position-x: center center;
+	background-position-y: center center;
+	background-attachment: scroll, fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 400px;
+	width: auto;
+	margin-bottom: 20px;
+}
+.resultant_cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	padding: 0% 5%;
+}
+.percentage {
+	padding: 6.5% 3.1%;
+	background-color: blueviolet;
+	height: 4em;
+	width: 4em;
+	border-radius: 50%;
+	display: inline-block;
+	color: #fff;
+	border: 2px solid #2c2c2c;
+}
+input::placeholder {
+	font-size: 1.5em;
+}
+h1 {
+	-webkit-text-stroke: 0.5px #000;
+}
