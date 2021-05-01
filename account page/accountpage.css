@@ -161,6 +161,10 @@ h2 {
 	box-sizing: border-box;
 }
 .campaign_image {
+	background-color: blueviolet;
+	background-image: url("assests/photos/campaign_image.jpg");
+	background-position: center center;
+	background-size: cover;
 	display: flex;
 	flex-wrap: wrap;
 	box-sizing: border-box;
