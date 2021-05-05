@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- for disabling viewport zooming -->
+		<meta
+			name="viewport"
+			content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0"
+		/>
+		<!-- CSS links -->
+		<!-- semantic ui's css link-->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+		/>
+		<!-- animations' links start -->
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<!-- animations' links end -->
+		<!-- fonts' links start -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- fonts' links end -->
+		<!-- add icon link -->
+		<link
+			rel="icon"
+			href="assests/photos/1.svg"
+			sizes="any"
+			type="image/svg+xml"
+		/>
+		<link rel="stylesheet" href="accountpage.css" />
+		<link
+			href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+			rel="stylesheet"
+		/>
+		<!-- End: CSS links -->
+		<title>Aid Net</title>
+	</head>
+
+	<body>
+		<div style="height: 125px"></div>
+		<div class="account_page">
+			<div class="ui text menu hello_menu">
+				<h1 class="ui" style="text-transform: none">My Profile</h1>
+				<div class="ui right item hello_text">
+					<h2 style="margin: 0">Hello,&nbsp;ali&nbsp; agh!</h2>
+				</div>
+			</div>
+			<div class="segment_container for_computer_tablet">
+				<div class="ui segment account_segment">
+					<form action="" style="height: 100%">
+						<div style="width: 100%">
+							<label for="img">
+								<div class="change_profile_image">
+									<img
+										class="ui centered circular image main-profile-img"
+										src="assests/photos/avatar.png"
+										alt="profile image"
+										style="width: 100%"
+									/>
+									<i class="fa fa-edit"></i>
+								</div>
+							</label>
+							<input type="file" id="img" name="img" accept="image/*" />
+
+							<h2 style="margin: 0">My Profile</h2>
+						</div>
+						<div class="user_phone" style="margin-top: 35px">
+							<div class="user_name" style="font-size: 1em">
+								<input
+									id="full-name"
+									name="full-name"
+									type="text"
+									placeholder="User name"
+									style="border: 0px; width: 100%"
+								/>
+
+								<div class="ui divider divider_div"></div>
+							</div>
+							<div class="phone_number" style="font-size: 1em">
+								<input
+									type="tel"
+									id="phone"
+									name="phone"
+									placeholder="+961 70 123 456"
+									pattern="+[0-9]{3}-[0-9]{2}-[0-9]{3}-[0-9]{3}"
+									style="border: 0px; width: 100%"
+								/>
+
+								<div class="ui divider divider_div"></div>
+							</div>
+						</div>
+						<div class="user_email" style="font-size: 1em; margin-top: 35px">
+							<input
+								id="email"
+								name="email"
+								type="email"
+								placeholder="joe@example.com"
+								style="border: 0px; width: 100%"
+							/>
+
+							<div class="ui divider divider_div"></div>
+						</div>
+						<div
+							class="ui checkbox sms_alert"
+							style="font-size: 1em; margin-top: 35px"
+						>
+							<input type="checkbox" name="example" />
+							<label>SMS alerts activation</label>
+						</div>
+						<div
+							style="
+								margin-top: 35px;
+								display: flex;
+								justify-content: space-around;
+							"
+						>
+							<a href="/account"
+								><input type="submit" class="edit_profile" />
+							</a>
+
+							<a href="/account"
+								><button class="cancel_button" style="border-radius: 100px">
+									Cancel
+								</button>
+							</a>
+						</div>
+					</form>
+				</div>
+				<div class="ui segment campaign_segment">
+					<h2 class="ui header">My Campaigns</h2>
+					<div class="module-border-wrap">
+						<div class="campaign ui segment" style="border-radius: 15px">
+							<div alt="campaign image" class="ui image campaign_image"></div>
+							<div class="campaign_text">
+								<div class="title_div">
+									<div class="campaign_title" style="font-size: 1.2em">
+										<strong>Donate for lebanon!</strong>
+									</div>
+								</div>
+								<a href="#" class="campaign_tag"> #Business </a>
+
+								<p class="campaign_description">
+									After the explosion in Beirut, many people became homeless and
+									became poor. So they need your help.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- For phone mode -->
+			<div class="module-border-wrap-big phone_mode">
+				<div class="segment_container">
+					<div class="ui segment account_segment">
+						<form action="" style="height: 100%">
+							<div style="width: 100%">
+								<label for="img">
+									<div class="change_profile_image">
+										<img
+											class="ui centered circular image main-profile-img"
+											src="assests/photos/avatar.png"
+											alt="profile image"
+											style="width: 100%"
+										/>
+										<i class="fa fa-edit"></i>
+									</div>
+								</label>
+								<input type="file" id="img" name="img" accept="image/*" />
+
+								<h2 style="margin: 0">My Profile</h2>
+							</div>
+
+							<div class="user_phone" style="margin-top: 25px">
+								<div class="user_name" style="font-size: 1em">
+									<input
+										id="full-name"
+										name="full-name"
+										type="text"
+										placeholder="User name"
+										style="border: 0px; width: 100%"
+									/>
+
+									<div class="ui divider divider_div"></div>
+								</div>
+								<div class="phone_number" style="font-size: 1em">
+									<input
+										type="tel"
+										id="phone"
+										name="phone"
+										placeholder="+961 70 123 456"
+										pattern="+[0-9]{3}-[0-9]{2}-[0-9]{3}-[0-9]{3}"
+										style="border: 0px; width: 100%"
+									/>
+
+									<div class="ui divider divider_div"></div>
+								</div>
+							</div>
+							<div class="user_email" style="font-size: 1em; margin-top: 25px">
+								<input
+									id="email"
+									name="email"
+									type="email"
+									placeholder="joe@example.com"
+									style="border: 0px; width: 100%"
+								/>
+								<div class="ui divider divider_div"></div>
+							</div>
+							<div
+								class="ui checkbox sms_alert"
+								style="font-size: 1em; margin-top: 25px"
+							>
+								<input type="checkbox" name="example" />
+								<label>SMS alerts activation</label>
+							</div>
+							<div
+								style="
+									margin-top: 25px;
+									display: flex;
+									justify-content: space-around;
+								"
+							>
+								<a href="/account"
+									><input type="submit" class="edit_profile" />
+								</a>
+
+								<a href="/account"
+									><button class="cancel_button" style="border-radius: 100px">
+										Cancel
+									</button>
+								</a>
+							</div>
+						</form>
+					</div>
+					<div class="ui segment campaign_segment">
+						<h2 class="ui header">My Campaigns</h2>
+						<div class="module-border-wrap">
+							<div class="campaign ui segment" style="border-radius: 15px">
+								<div alt="campaign image" class="ui image campaign_image"></div>
+								<div class="campaign_text">
+									<div class="title_div">
+										<div class="campaign_title" style="font-size: 1.2em">
+											<strong>Donate for lebanon!</strong>
+										</div>
+									</div>
+									<a href="#" class="campaign_tag"> #Business </a>
+									<p class="campaign_description">
+										After the explosion in Beirut, many people became homeless
+										and became poor. So they need your help.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -118,6 +118,18 @@ h2 {
 .sms_alert {
 	width: 100%;
 }
+.cancel_button {
+	color: #e5f0fa;
+	border: 0;
+	margin-top: 0.75em;
+	padding: 0.5em 1.3em;
+	font-size: 1.3em;
+	border-radius: 100px;
+	box-sizing: border-box;
+	cursor: pointer;
+	background: #e0e1e2 none;
+	color: #414141;
+}
 .edit_profile {
 	color: #e5f0fa;
 	border: 0;
@@ -293,4 +305,41 @@ h2 {
 	.account_page {
 		width: 95%;
 	}
+}
+.change_profile_image {
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+	border-style: solid;
+	border-color: #ffffff;
+	box-shadow: 0 0 8px 3px #b8b8b8;
+	position: relative;
+	margin: auto;
+}
+
+.change_profile_image img {
+	width: 100%;
+	height: auto;
+}
+
+.change_profile_image i {
+	position: absolute;
+	top: 20px;
+	right: -7px;
+	border-radius: 50%;
+	height: 30px;
+	width: 30px;
+	display: flex !important;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+	color: cornflowerblue;
+	box-shadow: 0 0 8px 3px #b8b8b8;
+}
+form input[type="file"] {
+	display: none;
+	cursor: pointer;
+}
+form label .change_profile_image {
+	cursor: pointer;
 }
