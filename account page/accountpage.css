@@ -33,18 +33,18 @@
 	width: 90%;
 	height: fit-content;
 	box-sizing: border-box;
-	background-image: url("assests/photos/accountpagebg.png");
+	/*background-image: url("../assests/photos/accountpagebg.png");
 	background-position: right bottom;
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	background-size: cover;
+	background-size: cover;*/
 	display: flex;
 	flex-wrap: wrap;
 	align-items: flex-start;
 	justify-content: center;
-	margin: 0% 5%;
+	margin: 0% auto;
 	overflow: hidden;
 }
 h1 {
@@ -74,13 +74,13 @@ h2 {
 	display: flex;
 	flex-wrap: wrap;
 	margin: 0;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
-	background: linear-gradient(
+	/*background: linear-gradient(
 		to right bottom,
 		rgba(0, 0, 0, 0.1),
 		rgba(0, 0, 0, 0.07)
-	);
+	);*/
 	border-radius: 5px;
 	box-sizing: border-box;
 	margin: 0em 0em 3em 0em;
@@ -102,7 +102,7 @@ h2 {
 	padding-right: 20px;
 }
 .phone_number {
-	width: 50%;
+	width: 100%;
 	box-sizing: border-box;
 	margin: 0;
 }
@@ -118,20 +118,8 @@ h2 {
 .sms_alert {
 	width: 100%;
 }
-.cancel_button {
-	color: #e5f0fa;
-	border: 0;
-	margin-top: 0.75em;
-	padding: 0.5em 1.3em;
-	font-size: 1.3em;
-	border-radius: 100px;
-	box-sizing: border-box;
-	cursor: pointer;
-	background: #e0e1e2 none;
-	color: #414141;
-}
 .edit_profile {
-	color: #e5f0fa;
+	color: var(--aw);
 	border: 0;
 	margin-top: 0.75em;
 	padding: 0.5em 1.3em;
@@ -159,7 +147,7 @@ h2 {
 	width: 10px;
 }
 .campaign_segment ::-webkit-scrollbar-track {
-	background: #f1f1f1;
+	background: var(--aw);
 }
 .campaign_segment ::-webkit-scrollbar-thumb {
 	background: #888;
@@ -173,8 +161,8 @@ h2 {
 	box-sizing: border-box;
 }
 .campaign_image {
-	background-color: blueviolet;
-	background-image: url("assests/photos/campaign_image.jpg");
+	background-color: var(--pink);
+	background-image: url("../assests/photos/campaign_image.jpg");
 	background-position: center center;
 	background-size: cover;
 	display: flex;
@@ -240,14 +228,13 @@ h2 {
 	border-radius: 15px;
 	margin-bottom: 1em;
 }
+.for_computer_tablet .segment_container {
+	background: none;
+}
+.side_image {
+	width: 55%;
+}
 @media only screen and (max-width: 425px) {
-	.phone_mode {
-		visibility: visible;
-	}
-	.for_computer_tablet {
-		visibility: hidden;
-		position: absolute;
-	}
 	* {
 		font-size: 11px;
 	}
@@ -271,11 +258,13 @@ h2 {
 	}
 	.segment_container {
 		width: 100%;
-		height: 1100px;
-		background-color: #e8e8e8;
-		margin-bottom: 0;
+		height: fit-content;
+		align-items: center;
+		justify-content: center;
+		background-color: var(--aw);
+		margin-bottom: 1em;
 	}
-	.module-border-wrap-big {
+	.for_computer_tablet {
 		max-width: fit-content;
 		padding: 1rem;
 		position: relative;
@@ -288,14 +277,16 @@ h2 {
 		border-radius: 15px;
 		margin-bottom: 1em;
 	}
-}
-@media only screen and (min-width: 426px) {
-	.phone_mode {
-		visibility: hidden;
-		position: absolute;
+	.for_computer_tablet .segment_container {
+		background: var(--aw);
 	}
-	.for_computer_tablet {
-		visibility: visible;
+	.side_image {
+		visibility: hidden;
+		width: 0;
+		height: 0;
+	}
+	.account_segment.ui.segment:last-child {
+		margin-bottom: 1em;
 	}
 }
 @media only screen and (min-width: 426px) and (max-width: 768px) {
@@ -305,13 +296,19 @@ h2 {
 	.account_page {
 		width: 95%;
 	}
+	.side_image {
+		width: 45%;
+	}
+	.account_segment {
+		width: 53%;
+	}
 }
 .change_profile_image {
 	width: 140px;
 	height: 140px;
 	border-radius: 50%;
 	border-style: solid;
-	border-color: #ffffff;
+	border-color: var(--aw);
 	box-shadow: 0 0 8px 3px #b8b8b8;
 	position: relative;
 	margin: auto;
@@ -332,8 +329,8 @@ h2 {
 	display: flex !important;
 	align-items: center;
 	justify-content: center;
-	background-color: white;
-	color: cornflowerblue;
+	background-color: var(--aw);
+	color: var(--light-blue);
 	box-shadow: 0 0 8px 3px #b8b8b8;
 }
 form input[type="file"] {
